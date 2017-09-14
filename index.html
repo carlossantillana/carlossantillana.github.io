@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Carlos Santillana</title>
-    <link href="/css/style.css" type="text/css" rel="stylesheet">
-</head>
-
-<body>
-    <div class="header">
-    <h1>Carlos Santillana<h1>
-    </div>
-    <div class="navigation">
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a> |
-            <li><a href="/html/aboutMe.html">About Me</a> |
-            <li><a href="/html/cv.html">CV</a> |
-            <li><a href="/html/contact.html">Contact</a>
-        </ul>
-    </nav>
-    </div>
-</body>
-</html>
+---
+layout: default
+title: Hank Quinlan, Horrible Cop
+---
+<h3> Projects </h3>
+{% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+  </ul>
