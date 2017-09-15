@@ -2,15 +2,15 @@ body {
     background-color: white;
     padding: 0;
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
-    /*text-align: right;*/
     list-style-type: none;
     overflow: hidden;
 }
 li {
-    display: inline;
+
     float: left;
 }
 

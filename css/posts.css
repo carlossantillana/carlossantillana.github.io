@@ -1,4 +1,6 @@
 .posts{
     float: left;
     text-align: left;
+    padding: 0;
+    display: block;
 }
