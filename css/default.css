@@ -3,27 +3,33 @@ body {
     padding: 0;
     margin: 0;
 }
-.header{
-    text-align: center;
-}
+
 ul {
+    /*text-align: right;*/
     list-style-type: none;
     overflow: hidden;
-    background-color: #444:
 }
 li {
-    float: right;
+    display: inline;
+    float: left;
 }
 
 li a {
     display: block;
     color: black;
-    text-align: center;
-    padding: 14px;
+    padding: 8px 14px;
     text-decoration: none;
 }
 
 li a:hover {
     text-decoration: underline;
 }
-
+.title{
+    float: left;
+    padding: 0;
+    font-size: 140%;
+    font-weight: bold;
+}
+.nav{
+    float: right;
+}

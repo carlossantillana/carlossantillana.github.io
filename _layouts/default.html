@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Carlos Santillana</title>
-    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <title>{{ page.title }}</title>
+    <link href="/css/default.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
-    <h1>Carlos Santillana<h1>
-    </div>
-    <div class="navigation">
         <ul>
-            <li><a href="/index.html">Home</a> 
-            <li><a href="/html/aboutMe.html">About Me</a>
-            <li><a href="/html/cv.html">CV</a>
-            <li><a href="/html/contact.html">Contact</a>
+            <li class="title">Carlos Santillana
+            <li class="nav"><a href="/html/contact.html">Contact</a>
+            <li class="nav"><a href="/html/resume.html">Resume</a>
+            <li class="nav"><a href="/html/aboutMe.html">About Me</a>
+            <li class="nav"><a href="/index.html">Home</a>
+
+
+
         </ul>
+    </div>
+    <div class="container">
+        {{ content }}
     </div>
 </body>
 </html>
