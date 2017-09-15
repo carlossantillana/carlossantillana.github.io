@@ -6,7 +6,11 @@ title: Carlos Santillana
 	<ul class="posts">
         <h2>Projects:</h2>
 	  {% for post in site.posts %}
+	  	<div class="title">
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></li>
-        <br>
+		</div>
+		<br>
+		<p> {{ post.excerpt }}</p>
+		<br>
 	  {% endfor %}
 	</ul>
