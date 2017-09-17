@@ -1,3 +1,5 @@
 name: Carlos Santillana
 markdown: kramdown
-paginate: 2
+paginate: 5
+plugins:
+   - jekyll-paginate
