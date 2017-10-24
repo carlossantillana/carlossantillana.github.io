@@ -5,3 +5,17 @@
 .info{
 
 }
+body{
+    margin: 0;
+}
+iframe{
+    width: 90vw;
+    height: 90vh;
+    margin: 0;
+    display: block;
+    border: none;
+    background: #000;
+    text-align: left;
+    padding: 0;
+
+}
