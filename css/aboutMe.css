@@ -1,12 +1,8 @@
 img{
     border-radius: 40%;
-    width: 30%;
-    height: 30%;
+    max-width: 100%;
+    height: auto;
     display: inline;
-    float:right;
-    caption-side: right;
-}
-.biography{
-    display: inline;
-    position: relative;
+
+    caption-side: left;
 }

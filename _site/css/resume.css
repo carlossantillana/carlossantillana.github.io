@@ -1,17 +1,8 @@
-.header{
-    font-weight: bold;
-}
 
-.info{
-
-}
-body{
-    margin: 0;
-}
 iframe{
     width: 60vw;
     height: 90vh;
-    margin: 0;
+    margin: auto;
     display: block;
     border: none;
     background: #000;
