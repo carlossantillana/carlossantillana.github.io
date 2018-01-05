@@ -6,7 +6,7 @@ image: bikeLock.jpg
 ---
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
 <div class="entry">
-<p>Between my friends and I we made a Bluetooth bike lock for the "Cutie Hack" hackaton. In our 12 hour sprint we took apart a bike lock fitted it with a servo motor attached a Raspberri Pi Zero with Bluetooth and a battery bank and made it unlock through bluetooth pairing on a phone rather than with a key. Our design was built with the idea that your phone is always on you and more convenient than fumbling with keys. Our creation won the best hardware hack at the hackaton.</p>
+<p>Between my classmates and I we made a Bluetooth bike lock for the "Cutie Hack" hackaton. In our 12 hour sprint we took apart a bike lock fitted it with a servo motor attached a Raspberri Pi Zero with Bluetooth and a battery bank and made it unlock through bluetooth pairing on a phone rather than with a key. Our design was built with the idea that your phone is always on you and more convenient than fumbling with keys. Our creation won the best hardware hack at the hackaton.</p>
 <a href="https://github.com/carlossantillana/Bluetooth_Lock" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 <div class="media">
 <div class="videoWrapper">
