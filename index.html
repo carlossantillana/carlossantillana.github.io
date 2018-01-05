@@ -6,38 +6,16 @@ title: Carlos Santillana
 <div class="posts">
   {% for post in paginator.posts %}
 	<div class="card">
-		<img src="{{ site.baseurl }}/images/{{ post.image }}">
+		<figure>
+		<img src="{{ site.baseurl }}/assets/postImage/{{ post.image }}">
 		<div class="excerpt">
-			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></li>
-			<br>
-			<p> {{ post.excerpt | strip_html}}</p>
-			<br>
+			<figcaption>
+			<h6><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></h6>
+			<p> {{ post.excerpt | strip_html | truncatewords:15 }}</p>
 		</div>
+	</figcaption>
+	</figure>
 	</div>
+
   {% endfor %}
 </div>
-	<!-- <ul class="posts">
-	  {% for post in paginator.posts %}
-	  	<div class="title">
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></li>
-		</div>
-		<br>
-		<p> {{ post.excerpt }}</p>
-		<br>
-	  {% endfor %}
-	</ul> -->
-
-	<!-- Pagination links -->
-	<div class="pagination">
-	  {% if paginator.previous_page %}
-	    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-	  {% else %}
-	    <span class="previous">Previous</span>
-	  {% endif %}
-	  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	  {% if paginator.next_page %}
-	    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-	  {% else %}
-	    <span class="next ">Next</span>
-	  {% endif %}
-	</div>

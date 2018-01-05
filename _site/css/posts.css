@@ -50,7 +50,13 @@
     display: flex;
     flex-grow: 1;
 }
-
+.card img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    caption-side: bottom;
+    min-width: 70%;
+}
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -59,4 +65,5 @@
 /* Add some padding inside the card container */
 .excerpt {
     padding: 2px 16px;
+    display: block;
 }
