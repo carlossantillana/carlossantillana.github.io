@@ -5,6 +5,7 @@ date: 2017-04-12
 image: nearestNeighbor.jpg
 ---
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
+<div class="entry">
 Feature Selection with nearest neighbor is a machine learning classifying algorithm.
 Feature selection requires a training database and based off this training dataset Feature selection
 can decide the class of any new instance. The class of the new instance is determined by
@@ -21,3 +22,4 @@ implemented are Forward Selection, Backward Selection and Carlos Selection.
 <img src="/assets/postImage/nearestNeighbor.jpg" class="img-responsive" alt="Nearest Neighbor">
 </div>
 <a href="https://github.com/carlossantillana/Bluetooth_Lock">Github Link</a>
+</div>

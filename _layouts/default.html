@@ -33,7 +33,7 @@
               </div>
                <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-            <li><a id="home">Home</a></li>
+            <li><a id="home"data-toggle="collapse" data-target=".navbar-collapse.hide">Home</a></li>
             <li><a id="aboutMe">About Me</a></li>
             <li><a id="projects">Projects</a></li>
             <li><a id="resume">Resume</a></li>
@@ -45,18 +45,17 @@
     <div class="aboutMe">
         <div class="heading">About Me</div>
         <link href="/css/aboutMe.css" type="text/css" rel="stylesheet">
-        <div class="self">
+        <figure id="self">
             <img src="https://farm5.staticflickr.com/4355/37043561936_cdf294b4ff_o.jpg"
              class="img-fluid" alt="Carlos Santillana">
-        </div>
-        <div class="biography">
-            <p>
-        Hello,
-        I am Carlos Andres Santillana, a computer science student at UCR. I enjoy technology, hiking, and photography.</p>
-        </div>
+            <figcaption>
+            Hello,
+            I am Carlos Andres Santillana, a computer science student at UCR. I enjoy technology, hiking, and photography.</figcaption>
+        </figure>
     </div>
+            <div class="heading">Projects</div>
     <div class="container">
-        <div class="heading">Projects</div>
+
         {{ content }}
     </div>
     <div class="resume">

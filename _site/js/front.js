@@ -24,5 +24,7 @@ $(document).ready(function(){
             scrollTop: $(".contact").offset().top},
             'slow');
     });
-
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
 });

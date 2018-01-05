@@ -15,7 +15,7 @@ $(document).ready(function(){
         		if ($('#lightbox').length > 0) { // #lightbox exists
 
         			//place href as img src value
-        			$('#content').html('<iframe src="' + image_href + '" ></iframe>');
+        			$('#content').html('<iframe src="' + image_href + '" "width="100px" height="300px" id="entry"></iframe>');
 
         			//show lightbox window - you could use .show('fast') for a transition
         			$('#lightbox').show();
@@ -27,7 +27,7 @@ $(document).ready(function(){
                 			'<div id="lightbox">' +
                 				'<p>Click to close</p>' +
                 				'<div id="content">' + //insert clicked link's href into img src
-                					'<iframe src="' + image_href +'" ></iframe>' +
+                					'<iframe src="' + image_href +'"width="100px" height="300px" id="entry" ></iframe>' +
                 				'</div>' +
                 			'</div>';
 
