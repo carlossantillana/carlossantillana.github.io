@@ -10,8 +10,8 @@ image: nearestNeighbor.jpg
 Feature selection requires a training database and based off this training dataset Feature selection
 can decide the class of any new instance. The class of the new instance is determined by
 comparing the distance from its features and its nearest neighbor’s features, the neighbor with
-the smallest total distance determines the new instance’s class.
-Feature Selection with nearest neighbor inherits nearest neighbor’s weaknesses. One such
+the smallest total distance determines the new instance’s class.</p>
+<p>Feature Selection with nearest neighbor inherits nearest neighbor’s weaknesses. One such
 weakness is that nearest neighbor is sensitive to outliers, which can be resolved by choosing the
 average of the kth nearest neighbors, but this is out of scope for this assignment. Another
 weakness is nearest neighbor is sensitive to units of measurement, this weakness is addressed in
