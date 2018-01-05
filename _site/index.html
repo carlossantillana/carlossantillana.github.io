@@ -13,10 +13,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/js/front.js"></script>
+    <script src="/js/lightbox.js"></script>
 </head>
 
 <body>
+    <div id="log"></div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
           <div class="navbar-header">
@@ -35,11 +38,10 @@
             <li><a id="projects">Projects</a></li>
             <li><a id="resume">Resume</a></li>
             <li><a id="contact">Contact</a></li>
-            <!-- <li><a href="/html/contact.html">Contact</a></li> -->
-            <!-- <li><div class="first"><button type="button">Contact</button></div></li> -->
         </ul>
     </div>
 </nav>
+
     <div class="aboutMe">
         <div class="heading">About Me</div>
         <link href="/css/aboutMe.css" type="text/css" rel="stylesheet">
@@ -48,22 +50,22 @@
              class="img-fluid" alt="Carlos Santillana">
         </div>
         <div class="biography">
+            <p>
         Hello,
-        I am Carlos Andres Santillana, a computer science student at UCR. I enjoy technology, hiking, and photography.
+        I am Carlos Andres Santillana, a computer science student at UCR. I enjoy technology, hiking, and photography.</p>
         </div>
-<br>
     </div>
     <div class="container">
         <div class="heading">Projects</div>
         <link href="/css/posts.css" type="text/css" rel="stylesheet">
 <div class="posts">
   
-	<div class="card">
+	<div class="card" id="Bucketlist Project">
 		<figure>
 		<img src="/assets/postImage/bucketlist.jpg">
 		<div class="excerpt">
 			<figcaption>
-			<h6><span>11 Jul 2017</span> » <a href="/2017/07/11/Bucketlist.html" title="Bucketlist Project">Bucketlist Project</a><br></h6>
+			<h6><span>11 Jul 2017</span> » <a href="/2017/07/11/Bucketlist.html" title="Bucketlist Project" class="lightboxTrigger">Bucketlist Project</a><br></h6>
 			<p> I made a bucketlist website that takes community feedback puts the feedback into a database...</p>
 		</div>
 	</figcaption>
@@ -71,12 +73,12 @@
 	</div>
 
   
-	<div class="card">
+	<div class="card" id="Morning Information Hub">
 		<figure>
 		<img src="/assets/postImage/MIH.jpg">
 		<div class="excerpt">
 			<figcaption>
-			<h6><span>11 Jun 2017</span> » <a href="/2017/06/11/MIH.html" title="Morning Information Hub">Morning Information Hub</a><br></h6>
+			<h6><span>11 Jun 2017</span> » <a href="/2017/06/11/MIH.html" title="Morning Information Hub" class="lightboxTrigger">Morning Information Hub</a><br></h6>
 			<p> The Morning Information Hub M.I.H. is an alarm and information hub used to start your...</p>
 		</div>
 	</figcaption>
@@ -84,13 +86,26 @@
 	</div>
 
   
-	<div class="card">
+	<div class="card" id="Bluetooth Bike Lock">
 		<figure>
 		<img src="/assets/postImage/bikeLock.jpg">
 		<div class="excerpt">
 			<figcaption>
-			<h6><span>14 May 2017</span> » <a href="/2017/05/14/Bluetooth-Bike_Lock.html" title="Bluetooth Bike Lock">Bluetooth Bike Lock</a><br></h6>
+			<h6><span>14 May 2017</span> » <a href="/2017/05/14/Bluetooth-Bike_Lock.html" title="Bluetooth Bike Lock" class="lightboxTrigger">Bluetooth Bike Lock</a><br></h6>
 			<p> Between my friends and I we made a Bluetooth bike lock for the “Cutie Hack”...</p>
+		</div>
+	</figcaption>
+	</figure>
+	</div>
+
+  
+	<div class="card" id="Feature Selection">
+		<figure>
+		<img src="/assets/postImage/nearestNeighbor.jpg">
+		<div class="excerpt">
+			<figcaption>
+			<h6><span>12 Apr 2017</span> » <a href="/2017/04/12/FeatureSelection.html" title="Feature Selection" class="lightboxTrigger">Feature Selection</a><br></h6>
+			<p> Feature Selection with nearest neighbor is a machine learning classifying algorithm. Feature selection requires a...</p>
 		</div>
 	</figcaption>
 	</figure>

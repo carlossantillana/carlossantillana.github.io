@@ -5,12 +5,12 @@ title: Carlos Santillana
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
 <div class="posts">
   {% for post in site.posts %}
-	<div class="card">
+	<div class="card" id="{{ post.title }}">
 		<figure>
 		<img src="{{ site.baseurl }}/assets/postImage/{{ post.image }}">
 		<div class="excerpt">
 			<figcaption>
-			<h6><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></h6>
+			<h6><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}" class="lightboxTrigger">{{ post.title }}</a><br></h6>
 			<p> {{ post.excerpt | strip_html | truncatewords:15 }}</p>
 		</div>
 	</figcaption>
