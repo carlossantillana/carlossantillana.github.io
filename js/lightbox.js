@@ -3,7 +3,7 @@ $(document).ready(function(){
         event.preventDefault();
         //Get clicked link href
         		var image_href = $(this).attr("href");
-
+                image_href
         		/*
         		If the lightbox window HTML already exists in document,
         		change the img src to to match the href of whatever link was clicked

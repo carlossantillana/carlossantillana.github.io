@@ -53,6 +53,8 @@ iframe{
     max-width: 200px;
     height: 200px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     caption-side: bottom;
 
 }
@@ -65,4 +67,7 @@ iframe{
 .excerpt {
     padding: 2px 16px;
     display: block;
+}
+.entry i{
+    font-size: 2em;
 }
