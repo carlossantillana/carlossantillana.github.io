@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".lightboxTrigger").click(function(event){
+    $(".card").click(function(event){
         event.preventDefault();
         //Get clicked link href
         		var image_href = $(this).attr("href");
