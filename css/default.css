@@ -1,9 +1,19 @@
 body {
-    background-image: url("/assets/concrete_seamless.png");
+    background-image: url("/assets/marble.png");
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
+.navbar-custom {
+    background-image: url("/assets/marble.png");
+    position: relative;
+    z-index: 2;
+    background-color: #fff
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
 img{
     position: relative;
     z-index: 2;
@@ -15,6 +25,7 @@ iframe{
 p {
     position: relative;
     z-index: 2;
+
 }
 .title{
     float: left;
@@ -47,8 +58,9 @@ footer {
 }
 #self img{
     border-radius: 40%;
-    max-width: 80%;
-    height: auto;
+    max-width: 100%;
+    width: 20%;
+    height: 20%;
     display: inline-flex;
 }
 
@@ -59,7 +71,7 @@ footer {
      overflow-y: auto;
      margin-top: 25px;
      margin-bottom: 100px;
-     height: 30vh;
+     height: 50vh;
      width: 80vw;
 
 }
@@ -102,6 +114,7 @@ footer {
     font-size: 2.5em;
     white-space: nowrap;
     text-align: center;
+    color: #0074D9;
 }
 #lightbox {
     position:fixed; /* keeps the lightbox window in the current viewport */
@@ -136,4 +149,9 @@ footer {
     }
     #self{
         display: inline-block;
+    }
+    #self img{
+        width: 40%;
+        height: 40%;
+    }
 }
