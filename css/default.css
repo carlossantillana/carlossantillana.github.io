@@ -16,11 +16,12 @@ footer {
     font-size: 200%;
     overflow: hidden;
     bottom: 0;
-    position: relative;
+    position: fixed;
     display: inline;
     white-space: nowrap;
     padding-left: .5em;
     word-spacing: 1em;
+    z-index: -1;
 
 }
 #self{
