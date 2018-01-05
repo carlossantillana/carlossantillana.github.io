@@ -2,6 +2,7 @@
 layout: post
 title: "Bucketlist Project"
 date: 2017-07-11
+image: bucketlist.jpg
 ---
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
 I made a bucketlist website that takes community feedback puts the feedback into a database and randomly gives out a bucketlist item when asked for at <a href="https://www.webbucketlist.com">Bucketlist</a>

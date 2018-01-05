@@ -2,7 +2,7 @@
     float: left;
     text-align: left;
     padding: 0;
-    display: block;
+    display: flex;
     list-style-type: none;
     overflow: hidden;
 }
@@ -27,7 +27,6 @@
 }
 .PageNavigation {
   font-size: 14px;
-  display: block;
   width: auto;
   overflow: hidden;
 }
@@ -41,4 +40,23 @@
 
 .PageNavigation .next {
   text-align: right;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 30%;
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.excerpt {
+    padding: 2px 16px;
 }

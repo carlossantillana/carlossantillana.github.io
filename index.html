@@ -3,8 +3,20 @@ layout: default
 title: Carlos Santillana
 ---
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
-	<ul class="posts">
-        <h2>Projects:</h2>
+<div class="posts">
+  {% for post in paginator.posts %}
+	<div class="card">
+		<img src="{{ site.baseurl }}/images/{{ post.image }}">
+		<div class="excerpt">
+			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></li>
+			<br>
+			<p> {{ post.excerpt | strip_html}}</p>
+			<br>
+		</div>
+	</div>
+  {% endfor %}
+</div>
+	<!-- <ul class="posts">
 	  {% for post in paginator.posts %}
 	  	<div class="title">
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br></li>
@@ -13,7 +25,7 @@ title: Carlos Santillana
 		<p> {{ post.excerpt }}</p>
 		<br>
 	  {% endfor %}
-	</ul>
+	</ul> -->
 
 	<!-- Pagination links -->
 	<div class="pagination">
