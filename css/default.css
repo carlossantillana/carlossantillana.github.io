@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/marble.png");
+    /*background-image: url("/assets/marble.png");*/
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -45,6 +45,21 @@ footer {
     word-spacing: 1em;
     z-index: 0;
 }
+.aboutMe{
+    margin: auto;
+    float: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    /*background-image: url("/assets/marble.png");*/
+    background-image: url("/assets/clouds.gif");
+    background-size: cover;
+    color: #FFFFFF;
+}
+
 #self{
     display: inline-flex;
     max-width: 100vw;
@@ -64,33 +79,30 @@ footer {
     display: inline-flex;
 }
 
+.projects{
+         /*background-image: url("/assets/marble.png");*/
+         background-color: #001f3f;
+         padding-bottom: 50px;
+         color: #FFFFFF;
+}
 .container{
     margin: auto;
     display: flex;
     text-align: center;
      overflow-y: auto;
-     margin-top: 25px;
-     margin-bottom: 100px;
+     padding-top: 25px;
+     padding-bottom: 100px;
      height: 50vh;
      width: 80vw;
-
-}
-
-.aboutMe{
-    margin: auto;
-    float: center;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
 }
 
 .resume{
 
     /*position: relative;
     width: 100%;*/
+    padding-top: 25px;
+    background-image: url("/assets/marble.png");
+    /*background-color: #85144b;*/
 }
 .pdf iframe {
     margin: 0 auto;
@@ -107,14 +119,25 @@ footer {
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /*background-image: url("/assets/marble.png");*/
 }
 .heading{
     font-size: 2.5em;
     white-space: nowrap;
     text-align: center;
+    width: 100vw;
     color: #0074D9;
+}
+#headProj{
+    color: #FFFFFF;
+}
+#headResu{
+    color: #111111;
+}
+#headAbou{
+    color: #FFFFFF;
 }
 #lightbox {
     position:fixed; /* keeps the lightbox window in the current viewport */
@@ -129,7 +152,7 @@ footer {
 #lightbox p {
     text-align:right;
     color:#fff;
-    margin-right:20px;
+    padding-right:20px;
     font-size:12px;
 }
 #lightbox img {

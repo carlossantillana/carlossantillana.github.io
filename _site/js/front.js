@@ -11,7 +11,7 @@ $(document).ready(function(){
     });
     $("#projects").click(function() {
         $('html,body').animate({
-            scrollTop: $(".container").offset().top},
+            scrollTop: $(".projects").offset().top},
             'slow');
     });
     $("#resume").click(function() {

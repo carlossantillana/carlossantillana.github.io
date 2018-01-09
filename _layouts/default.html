@@ -20,13 +20,13 @@
 
 <body>
     <div id="log"></div>
-    <nav class="navbar navbar-custom navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
           <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse"
                   data-target="#myNavbar"
                   <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                  <span clas    s="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="/index.html">Carlos Santillana</a>
@@ -43,7 +43,7 @@
 </nav>
 
     <div class="aboutMe">
-        <div class="heading">About Me</div>
+        <div class="heading" id="headAbou">About Me</div>
         <link href="/css/aboutMe.css" type="text/css" rel="stylesheet">
         <figure id="self">
             <img src="https://farm5.staticflickr.com/4355/37043561936_cdf294b4ff_o.jpg"
@@ -53,13 +53,14 @@
             I am Carlos Andres Santillana, a computer science student at UCR. I enjoy technology, hiking, and photography.</p></figcaption>
         </figure>
     </div>
-            <div class="heading">Projects</div>
-    <div class="container">
-
-        {{ content }}
+    <div class="projects">
+        <div class="heading" id="headProj">Projects</div><br>
+        <div class="container">
+            {{ content }}
+        </div>
     </div>
     <div class="resume">
-        <div class="heading">Resume</div>
+        <div class="heading" id="headResu">Resume</div>
         <link href="/css/resume.css" type="text/css" rel="stylesheet">
         <div class="pdf">
             <iframe src="https://drive.google.com/file/d/14IiC1CJr16yFutUY7xiiEu7yAVkGp_M9/preview"></iframe>
