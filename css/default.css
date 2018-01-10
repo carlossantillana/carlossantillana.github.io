@@ -6,10 +6,15 @@ body {
 }
 
 .navbar-custom{
-    background-color: #AAAAAA;
+    background-color: #FFFFFF;
     background: #111111;
-    border-color: #AAAAAA;
-
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: white;
+    color: white;
+    border-color: white;
 }
 /*.navbar-custom {
     background-image: url("/assets/marble.png");
@@ -76,6 +81,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    padding-top: 20px;
     font-size: 1.2em;
 }
 #self img{
@@ -90,7 +96,7 @@ footer {
 .projects{
          /*background-image: url("/assets/marble.png");*/
          background-color: #001f3f;
-         padding-bottom: 50px;
+         padding-bottom: 25px;
          width: 100vw;
          height: 100vh;
          color: #FFFFFF;
@@ -102,7 +108,7 @@ footer {
      overflow-y: auto;
      padding-top: 25px;
      padding-bottom: 100px;
-     height: 50vh;
+     height: 70vh;
      width: 80vw;
 }
 
@@ -180,9 +186,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .container{
-        height: 50vh;
-    }
+
     #self{
         display: inline-block;
     }
