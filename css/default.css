@@ -61,16 +61,15 @@ footer {
     padding-top: 60px;
     padding-bottom: 35px;
     /*background-image: url("/assets/marble.png");*/
-    background-image: url("/assets/cropcyberSunset.gif");
+    background-image: url("/assets/final.gif");
     background-size: 100vw 100vh;
+    /*background-size: cover;*/
     color: #FFFFFF;
 }
 .figure{
     position: relative;
 }
-#self{
 
-}
 #self figcaption{
     display: inline-block;
     vertical-align: middle;
