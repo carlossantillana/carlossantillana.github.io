@@ -1,5 +1,10 @@
 img{
     z-index: 2;
+    margin: 0 auto;
+}
+.body{
+    background-color: #001f3f;
+    color: #ffffff;
 }
 iframe{
     z-index: 2;
