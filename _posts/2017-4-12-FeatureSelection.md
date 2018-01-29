@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Feature Selection"
-date: 2017-04-12
+date: 2017-11-12
 image: nearestNeighbor.jpg
 ---
 <link href="/css/posts.css" type="text/css" rel="stylesheet">
