@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Visit Huntington Library</title>
+	</head>
+	<style>
+body {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: Gainsboro;
+  opacity: 0.9;
+  font-size: 2.9em;
+}
+html {
+	background-image: url('huntingtonLibraryPhone.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 992px){
+	html{
+	background-image: url('huntingtonLibrary.jpg');
+	}
+	body {
+	 font-size: 1.4em;
+	}
+}
+
+</style>
+
+	<body>
+		<form action="http://www.foo.com" method="POST">
+			<p>Do you want tickets for next month?</p>
+			<div>
+				<input type="radio" id="getTicketsYes" name="getTickets" value="true"
+			 		checked>
+			 <label for="getTicketsYes">Yes</label>
+		 </div>
+		 <div>
+  	 	<input type="radio" id="getTicketsNo" name="getTickets" value="false">
+  		<label for="No">No</label>
+		</div>
+
+		<p>What time do you want to enter?</p>
+		<div>
+			<input type="radio" id="MorningYes" name="getMorning" value="true"
+				checked>
+		 <label for="MorningYes">Between 10AM and Noon</label>
+	 </div>
+	 <div>
+		<input type="radio" id="MorningNo" name="getMorning" value="false">
+		<label for="MorningYes">Between 1PM and 4PM</label>
+	</div>
+
+		<p>How many tickets do you want?</p>
+		<div>
+			<select id="QTY" name="QTY" onchange="changeFields()">
+			 <option value="1">1</option>
+			 <option value="2">2</option>
+			 <option value="3">3</option>
+			 <option value="4">4</option>
+			 <option value="5">5</option>
+		 </select>
+		</div>
+		<div id="container">
+			Person 1 <br>
+			<div id="container2">First Name: <input type="text" name="firstName1"><br></div>
+			<div id="container3">Last Name: <input type="text" name="lastName1"><br></div>
+
+		</div>
+        <button>Send</button>
+    </form>
+    <script>
+		function changeFields(){
+		            var number = document.getElementById("QTY").value;
+		            var container = document.getElementById("container");
+		            while (container.hasChildNodes()) {
+		                container.removeChild(container.lastChild);
+		            }
+		            for (i=0;i<number;i++){
+									container.appendChild(document.createTextNode("Person  " + (i+1) ));
+									container.appendChild(document.createElement("br"));
+
+		                container.appendChild(document.createTextNode("First Name:  "));
+				    var input = document.createElement("input");
+				    var a = document.createAttribute("name");
+				    var j = i + 1;
+				    a.value = "firstName" + j;
+				    input.setAttributeNode(a);
+		                input.type = "text";
+		                container.appendChild(input);
+
+				container.appendChild(document.createElement("br"));
+				container.appendChild(document.createTextNode("Last Name:  "));
+				var lastName = document.createElement("input");
+				var a_lastName = document.createAttribute("name");
+                                    a_lastName.value = "lastName" + j;
+                                    lastName.setAttributeNode(a_lastName);
+				lastName.type = "text";
+				container.appendChild(lastName);
+
+		                container.appendChild(document.createElement("br"));
+		            }
+		        }
+</script>
+	</body>
